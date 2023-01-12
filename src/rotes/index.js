@@ -1,4 +1,7 @@
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import {
+  createNativeStackNavigator,
+  useRoute,
+} from "@react-navigation/native-stack";
 import Cadastro from "../pages/cadastro";
 import Lista from "../pages/lista";
 import React from "react";
@@ -10,6 +13,7 @@ export default function StackNavigation() {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Cadastro" component={Cadastro} />
+
       <Stack.Screen name="Lista" component={Lista} />
     </Stack.Navigator>
   );
