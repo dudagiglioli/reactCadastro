@@ -16,13 +16,6 @@ export default function Cadastro() {
   const [cpf, setCpf] = useState("");
   const navigation = useNavigation();
 
-  const register = () => {
-    navigation.navigate("Lista", {});
-    name: name;
-    idad: idad;
-    cpf: cpf;
-  };
-
   return (
     <View style={styles.container}>
       <ScrollView style={styles.scrollView}>
