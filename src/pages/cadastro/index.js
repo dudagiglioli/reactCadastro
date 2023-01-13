@@ -9,6 +9,7 @@ import {
 import styles from "./style";
 import { navegar } from "./functions";
 import { useNavigation } from "@react-navigation/native";
+import Icon from "react-native-vector-icons/AntDesign";
 
 export default function Cadastro() {
   const [name, setName] = useState("");
@@ -21,8 +22,9 @@ export default function Cadastro() {
       <ScrollView style={styles.scrollView}>
         <Text style={styles.title}>LOGIN</Text>
 
-        <Text style={styles.texto}>NOME</Text>
+        <Icon style={styles.icon} name="user" size={50} color="#4682B4" />
 
+        <Text style={styles.texto}>NOME</Text>
         <TextInput
           value={name}
           onChangeText={(text) => {

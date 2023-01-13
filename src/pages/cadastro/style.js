@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     fontSize: 25,
     marginTop: 25,
-    marginBottom: 35,
+
     fontFamily: "fantasy",
   },
 
@@ -56,6 +56,13 @@ const styles = StyleSheet.create({
 
   scrollView: {
     backgroundColor: "#F0F8FF",
+  },
+
+  icon: {
+    height: 80,
+    margin: 0,
+    alignSelf: "center",
+    marginBottom: 50,
   },
 });
 

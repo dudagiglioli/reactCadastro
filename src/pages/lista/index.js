@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./style";
 import { View, Text, Image, FlatList, TouchableOpacity } from "react-native";
 import { useRoute } from "@react-navigation/native";
+import Icon from "react-native-vector-icons/AntDesign";
 
 const DATA = [
   {
@@ -87,7 +88,10 @@ export default function Lista() {
       />
 
       <TouchableOpacity style={styles.botao2} onPress={() => handleRemove()}>
-        <Text style={styles.texto2}>REMOVE</Text>
+        <Text style={styles.texto2}>
+          REMOVE{" "}
+          <Icon style={styles.icon} name="delete" size={15} color="white" />
+        </Text>
       </TouchableOpacity>
     </View>
   );
