@@ -32,6 +32,7 @@ export default function Cadastro() {
           }}
           style={styles.input}
           keyboardType={"string"}
+          maxLength={50}
         />
 
         <Text style={styles.texto}>IDADE</Text>
@@ -42,7 +43,8 @@ export default function Cadastro() {
             setIdad(text);
           }}
           style={styles.input}
-          keyboardType={"string"}
+          keyboardType={"numeric"}
+          maxLength={2}
         />
 
         <Text style={styles.texto}>CPF</Text>
@@ -53,7 +55,10 @@ export default function Cadastro() {
             setCpf(text);
           }}
           style={styles.input}
-          keyboardType={"string"}
+          keyboardType={"numeric"}
+          placeholder="xxx.xxx.xxx-XX"
+          placeholderTextColor="#8b9cb5"
+          maxLength={14}
         />
 
         <TouchableOpacity
